@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+
+    <link href="normalize.css" rel="stylesheet" >
+    <style>
+        nav {
+            display: flex;
+            background-color: #f6f6f6;
+            justify-content: flex-end;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            height: 100px;
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            list-style: none;
+        }
+        nav ul li a {
+            font-size: medium;
+            text-decoration: none;
+            padding: 0 15px;
+            color: #636363;
+            transition: 0.2;
+        }
+        nav ul li a:hover {
+            /* */
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .aboutme {
+            padding-top: 150px;
+        }
+        .aboutme img {
+            border-style: none;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 400px;
+            display: block;
+        }
+        h2 {
+            color: #281b39;
+            font-size: 38px;
+            text-align: center;
+            margin: 30px 0px 100px;
+        }
+        p {
+            font-size: 22px;
+            color: #636363;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="about_me.html">About me</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact_me.html">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <section class="aboutme">
+        <div class="container">
+            <img src="images\petr.jpeg" alt="petr valouch">
+            <h2>
+                Hi! I am Petr!
+                <br>
+                I am learning programming since my university days.
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Modi aliquid ut quo odio voluptatum illum rerum ducimus nam nisi 
+                asperiores, consectetur iusto aperiam expedita voluptate optio 
+                animi officia magni odit?
+            </p>
+        </div>
+    </section>
+</body>
+</html>
