@@ -33,43 +33,58 @@
         nav ul li a:hover {
             /* */
         }
-        .container {
-            display: flex;
-            justify-content: flex-start;
-            position: relative;
-            width: 60%;
-            max-width: 1200px;
-            margin: 0;
-            padding: 0 15px;
-            background-color: aquamarine;
-        }
-        .container-text {
-            width: 40%;
-            background-color: #cfcfcf;
-            padding: 20px 10px;
-            margin: 0;
-        }
+    
         .product {
-            padding-top: 150px;
-            background-color: blueviolet;
-            width: 80%;
+            padding-top: 100px;
         }
-        .product img {
-            border-style: none;
-            border-radius: 10px;
-            margin: 0;
-            max-width: 300px;
-            display: block;
+        .headingText {
+            padding-top: 50px;
+            text-align: center;
         }
         h2 {
             color: #281b39;
-            font-size: 38px;
+            font-size: 46px;
+        }
+        .container {
+            padding-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        img {
+            height: 400px;
+        }
+        .container-text {
             text-align: center;
-            margin: 30px 0px 100px;
+            width: 30%;
+            background-color: #cfcfcf;
+            padding: 0px 10px;
+        }
+        h3 {
+            color: #281b39;
+            font-size: 24px;
         }
         p {
+        font-size: 22px;
+        color: #636363;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        div a {
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+            background-color: #5737ba;
             font-size: 22px;
-            color: #636363;
+            color: white;
+        }
+        div a:hover {
+            background-color: #9e95ba;
+            color: #281b39;
+            border: #281b39;
+            border-width: 2px;
         }
         
     </style>
@@ -83,22 +98,27 @@
             <li><a href="contact_me.html">Contact me</a></li>
         </ul>
     </nav>
-
     <section class="product">
+        <div class="headingText">
+            <h2>My Mobile Apps</h2>
+        </div>
         <div class="container">
             <img src="images\home.jpeg" alt="petr valouch">
             <div class="container-text">
-                <h2>
+                <h3>
                     iRemember
                     <br>
                     iOS mobile app
-                </h2>
+                </h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                     Modi aliquid ut quo odio voluptatum illum rerum ducimus nam nisi 
                     asperiores, consectetur iusto aperiam expedita voluptate optio 
                     animi officia magni odit?
                 </p>
+                <div class="links">
+                    <a href="products.html">Mobile Apps</a>
+                </div>
             </div>
         </div>
     </section>
