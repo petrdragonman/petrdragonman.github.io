@@ -1,80 +1,120 @@
-<html>
-    <head>
-        <!-- comment in html -->
-        <title>iRemember iOS app</title>
-        <link rel="stylesheet" href="normalize.css">
-        <style type="text/css">
-            body {
-                /*comment in CSS */
-                background-color: #E2F4FB
-            }
-            p {
-                font-size: large;
-            }
-            a {
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-        </style>
-    </head>
-    <body>
-        <h1>iRemember iOS app</h1>
-        <br>
-        <div>
-            <h3>SUPPORT</h3>
-            <p>
-                iRemember is a simple iOS app to store all of your 
-                login or any similar details securely into your personal
-                iCloud account.
-            </p>
-            <p>
-                All the entry are searchable from the search bar
-                on the home page. You can create a new Item, you can
-                delete an item and also you can update an item.
-            </p>
-            <p>
-                To create a new entry select the plus
-                button in the right top corner. Make all the entries 
-                and press enter to submit the new item. The tile field 
-                can not be empty.
-            </p>
-            <p>
-                To delete an item just swipe from the right to the left.
-            </p>
-            <p>
-                To update an item select the item from the home
-                screen amd the detail screen will display. Press enter 
-                to confirm the changes.
-            </p>
-        </div>
-        <br>
-        <div>
-            <h3>SCREEN SHOTS</h3>
-            <img src="images/home.jpeg" width="200">
-            <img src="images/create.jpeg" width="200">
-            <img src="images/detail.jpeg" width="200">
-            <img src="images/delete.jpeg" width="200">
-        </div>
-        <br>
-        <div>
-            <h3>CONTACT ME</h3>
-            <p> email: petrdragonman@me.com</p>
-        </div>
-        <br>
-        <div>
-            <h3>PRIVACY POLICY</h3>
-            <a href="privacy_policy.html"> privacy policy </a>
-        </div>
-        <hr>
-        <div>
-            <h5>© 2023, Petr Valouch, developer</h5>
-            <br>
-        </div>
-        <br>
+    <link href="normalize.css" rel="stylesheet" >
+    <style>
+        nav {
+            display: flex;
+            background-color: #f6f6f6;
+            justify-content: flex-end;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            height: 100px;
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            list-style: none;
+        }
+        nav ul li a {
+            font-size: medium;
+            text-decoration: none;
+            padding: 0 15px;
+            color: #636363;
+            transition: 0.2;
+        }
+        nav ul li a:hover {
+            color: rebeccapurple;
+        }
+        .aboutme {
+            padding-top: 120px;
+            margin-left: 50px;
+        }
+        .welcomeText {
+            position: relative;
+            width: 70%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        h2 {
+            color: #281b39;
+            font-size: 38px;
+            text-align: left;
+            margin: 30px 0px 50px;
+        }
+        p {
+            font-size: 22px;
+            color: #636363;
+            width: 400px;
+            height: auto;
+        }
+        .buttons {
+            margin-top: 80px;
+        }
+        section div a {
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 10px;
+            background-color: #5737ba;
+            font-size: 22px;
+            color: white;
+            margin-top: 50px;
+            margin-left: 240px;
+        }
+        section div a:hover {
+            background-color: #a095bf;
+            border: black;
+        }
+        
 
-    </body>
-
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="about_me.html">About me</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact_me.html">Contact me</a></li>
+        </ul>
+    </nav>
+    <section class="aboutme">
+        <div class="welcomeText">
+            <h2>
+                Welcome to Petr's portfolio page
+            </h2>
+            <div class="bodyText">
+                <p>
+                    Hi! My name is Petr!
+                </p>
+                <p>
+                    This web page was designed to showcase all my public 
+                    work. To see all my work please click the 
+                    link below.
+                </p>
+                <p>
+                    The content of his web page will grow more in the future 
+                    as I will be adding more apps and more content as soon as 
+                    I finish another project.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="buttons">
+        <div>
+            <a href="products.html">Mobile Apps</a>
+            <!-- <button type="submit">Mobile Apps</button> -->
+        </div>
+    </section>
+    
+    
+</body>
 </html>
